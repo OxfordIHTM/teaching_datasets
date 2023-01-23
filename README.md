@@ -10,7 +10,7 @@ data](https://img.shields.io/badge/license%20(for%20data)-CC0-blue.svg)](https:/
 <!-- badges: end -->
 
 This repository contains a collection of teaching datasets that can be
-used for teacghing [R](https://cran.r-project.org). Although this
+used for teaching [R](https://cran.r-project.org). Although this
 repository was created specifically for use in teaching the [Open
 Reproducible Science in
 R](https://oxford-ihtm.io/open-reproducible-science) lecture series, the
