@@ -6,6 +6,7 @@ output: github_document
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
+  echo = FALSE,
   collapse = TRUE,
   comment = "#>"
 )
@@ -18,5 +19,29 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 This repository contains a collection of teaching datasets that can be used for teaching [R](https://cran.r-project.org). Although this repository was created specifically for use in teaching the [Open Reproducible Science in R](https://oxford-ihtm.io/open-reproducible-science) lecture series, the data made available through here is open for access and use by anyone and is distributed under a Creative Commons 1.0 Universal (CC0) license.
+
+## Dataset description
+
+```{r data-description}
+file_names <- list.files() |>
+  (\(x) x[stringr::str_detect(string = x, pattern = "README|teaching_datasets", negate = TRUE)])()
+
+file_types <- file_names |>
+  stringr::str_split(pattern = "\\.", simplify = TRUE) |>
+  (\(x) x[ , 2])() |>
+  toupper()
+
+file_description <- vector(mode = "character", length = length(file_types))
+
+file_description[file_names == "south_wollo_coverage.csv"] <- "A dataset from a Community-based Management of Acute Malnutrition (CMAM) programme in South Wollo Zone, Ethiopia"
+
+
+data.frame(file_names, file_types, file_description) |>
+  knitr::kable(row.names = FALSE, col.names = c("File Name", "File Type", "File Description"))
+
+```
+
+
+
 
 
