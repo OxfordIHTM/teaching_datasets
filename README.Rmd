@@ -48,10 +48,13 @@ file_description[file_names == "salex.dat"] <- "This data comes from a food-born
 file_description[file_names == "school_nutrition.csv"] <- "A dataset from a nutrition survey of school children 10 years and older from Pakistan."
 file_description[file_names == "school_nutrition.xlsx"] <- "A dataset from a nutrition survey of school children 10 years and older from Pakistan."
 file_description[file_names == "south_wollo_coverage.csv"] <- "A dataset from a Community-based Management of Acute Malnutrition (CMAM) programme in South Wollo Zone, Ethiopia"
-file_description[file_names == "ssw.dat"] <- "This dataset contains data on the marital status, home circumstances, and ethnic group of 152 persons recruited into a study into the levels of stress experienced by student social workers in the United Kingdom."
+file_description[file_names == "sssw.dat"] <- "This dataset contains data on the marital status, home circumstances, and ethnic group of 152 persons recruited into a study into the levels of stress experienced by student social workers in the United Kingdom."
 file_description[file_names == "tsstamp.dat"] <- "This data is from a matched case-control study investigating the association between the use of different brands of tampon and toxic shock syndrome undertaken during an outbreak. Only a subset of the original dataset is used here."
-file_description[file_names == "waste.dat"] <- "The file waste.dat contains the location of twenty-three recent cases of childhood cancer in 5 by 5 km square surrounding an industrial waste disposal site."
+file_description[file_names == "waste.dat"] <- "The dataset contains the location of twenty-three recent cases of childhood cancer in 5 by 5 km square surrounding an industrial waste disposal site."
 
+file_use <- vector(mode = "character", length = length(file_names))
+
+file_use[file_names == ""]
 
 
 data.frame(file_names, file_types, file_description) |>
