@@ -33,7 +33,21 @@ file_types <- file_names |>
 
 file_description <- vector(mode = "character", length = length(file_types))
 
+file_description[file_names == "ba.dat"] <- "The dataset from Bland JM, Altman DG. Statistical Methods for Assessing Agreement Between Two Methods of Clinical Measurement. The Lancet. 1986;1: 307–310."
+file_description[file_names == "bateman.dat"] <- "On Saturday, 21st April 1990, a luncheon was held in the home of Jean Bateman. There was a total of forty-five guests which included thirty-five members of the Department of Epidemiology and Population Sciences at the London School of Hygiene and Tropical Medicine. On Sunday morning, 22nd April 1990, Jean awoke with symptoms of gastrointestinal illness; her husband awoke with similar symptoms. The possibility of an outbreak related to the luncheon was strengthened when several of the guests telephoned Jean on Sunday and reported illness. On Monday, 23rd April 1990, there was an unusually large number of department members absent from work and reporting illness. Data from this outbreak is stored in this dataset."
+file_description[file_names == "ca.dat"] <- "A dataset on the survival of cancer patients in two different treatment groups"
 file_description[file_names == "south_wollo_coverage.csv"] <- "A dataset from a Community-based Management of Acute Malnutrition (CMAM) programme in South Wollo Zone, Ethiopia"
+file_description[file_names == "cover.dat"] <- "The dataset contains data from a coverage survey for a therapeutic feeding program (TFP) in central Malawi undertaken in March 2003. Data were collected using the centric systematic area sampling method to define sampling locations: A number of communities located closest to the centres of thirty 10 x 10 kilometre grid squares were sampled using active (investigative) case-finding."
+file_description[file_names == "diets.dat"] <- "The dataset contains data from a trial of two different diets undertaken at an adult therapeutic feeding centre in Somalia."
+file_description[file_names == "fem.dat"] <- "A dataset from 118 female pyschiatric patients"
+file_description[file_names == "fem.xlsx"] <- "A dataset from 118 female pyschiatric patients"
+file_description[file_names == "gudhiv.dat"] <- "This data is from a cross-sectional study of 435 male patients who presented with sexually transmitted infections at an outpatient clinic in The Gambia between August 1988 and June 1990."
+file_description[file_names == "malaria.dat"] <- "A dataset that contains data on rainfall (in mm) and the number of cases of malaria reported from health centres in an administrative district of Ethiopia between July 1997 and July 1999"
+file_description[file_names == "pop.dat"] <- "A dataset that contains data on the age (in months) and sex of 438 children aged between six and sixty months collected as part of a nutritional anthropometry survey of the Khosh Valley in Northeast Afghanistan."
+file_description[file_names == "salex.dat"] <- "This data comes from a food-borne outbreak. On Saturday 17th October 1992, eighty-two people attended a buffet meal at a sports club. Within fourteen to twenty-four hours, fifty-one of the participants developed diarrhoea, with nausea, vomiting, abdominal pain and fever."
+file_description[file_names == "tsstamp.dat"] <- "This data is from a matched case-control study investigating the association between the use of different brands of tampon and toxic shock syndrome undertaken during an outbreak. Only a subset of the original dataset is used here."
+file_description[file_names == "waste.dat"] <- "The file waste.dat contains the location of twenty-three recent cases of childhood cancer in 5 by 5 km square surrounding an industrial waste disposal site."
+
 
 
 data.frame(file_names, file_types, file_description) |>
