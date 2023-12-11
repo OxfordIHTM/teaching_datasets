@@ -57,7 +57,22 @@ file_use <- vector(mode = "character", length = length(file_names))
 file_use[file_names == "ba.dat"] <- "Useful for learning and practicing how to perform statistical methods to compare diagnostic tests using the Bland and Altman approach and the Bland and Altman plot"
 file_use[file_names == "bateman.dat"] <- "Useful for learning and practicing how to perform logistic regression"
 file_use[file_names == "ca.dat"] <- "Useful for learning and practicing how to perform survival anlaysis"
-
+file_use[file_names == "cover.dat"] <- "Useful for learning and practicing how to analyse survey data and how to perform basic spatial analysis"
+file_use[file_names == "diets.dat"] <- "Useful for learning and practicing statistical tests to show difference in mean between two groups"
+file_use[file_names == "fem.dat"] <- "Useful for learning and practicing various statistical tests, linear regression, logistic regression, and linear modelling"
+file_use[file_names == "fem.xlsx"] <- "Useful for learning and practicing various statistical tests, linear regression, logistic regression, and linear modelling"
+file_use[file_names == "gudhiv.dat"] <- "Useful for learning and practicing logistic regression"
+file_use[file_names == "malaria.dat"] <- "Usefule for learning and practicing time series analysis and plotting"
+file_use[file_names == "nut.dat"] <- "Useful for learning and practicing how to analyse survey data"
+file_use[file_names == "octe.dat"] <- "Useful for learning and practicing how to perform analysis for a matched cases-control study"
+file_use[file_names == "pop.dat"] <- "Useful for learning and practicing how to create various plots including a population pyramid plot"
+file_use[file_names == "salex.dat"] <- "Useful for learning and practicing how to perform analysis for relative risk and odds ratios"
+file_use[file_names == "school_nutrition.csv"] <- "Useful for learning how to analyse survey data"
+file_use[file_names == "school_nutrition.xlsx"] <- "Useful for learning how to analyse survey data"
+file_use[file_names == "south_wollo_coverage.csv"] <- "Useful for learning how to analyse survey data and perform basic spatial analysis"
+file_use[file_names == "sssw.dat"] <- "Useful for learning how to analyse survey data and using various plots for exploratory data analysis"
+file_use[file_names == "tsstamp.dat"] <- "Useful for learning and practicing how to perform logistic regression and stratified analysis"
+file_use[file_names == "waste.dat"] <- "Useful for learning and practicing computer simulation to test spatial clustering"
 
 
 
