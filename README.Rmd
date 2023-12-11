@@ -54,11 +54,16 @@ file_description[file_names == "waste.dat"] <- "The dataset contains the locatio
 
 file_use <- vector(mode = "character", length = length(file_names))
 
-file_use[file_names == ""]
+file_use[file_names == "ba.dat"] <- "Useful for learning and practicing how to perform statistical methods to compare diagnostic tests using the Bland and Altman approach and the Bland and Altman plot"
+file_use[file_names == "bateman.dat"] <- "Useful for learning and practicing how to perform logistic regression"
+file_use[file_names == "ca.dat"] <- "Useful for learning and practicing how to perform survival anlaysis"
 
 
-data.frame(file_names, file_types, file_description) |>
-  knitr::kable(row.names = FALSE, col.names = c("File Name", "File Type", "File Description"))
+
+
+
+data.frame(file_names, file_types, file_description, file_use) |>
+  knitr::kable(row.names = FALSE, col.names = c("File Name", "File Type", "File Description", "Epidemiology/Statistics Usage"))
 
 ```
 
