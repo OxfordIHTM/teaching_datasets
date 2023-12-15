@@ -3,3 +3,7 @@
 .RData
 .Ruserdata
 *.sim
+surveyBase.csv
+surveyEnd.csv
+villageBase.csv
+villageEnd.csv

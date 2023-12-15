@@ -24,7 +24,7 @@ This repository contains a collection of teaching datasets that can be used for 
 
 ```{r data-description}
 file_names <- list.files() |>
-  (\(x) x[stringr::str_detect(string = x, pattern = "README|teaching_datasets", negate = TRUE)])()
+  (\(x) x[stringr::str_detect(string = x, pattern = "README|teaching_datasets|Base|End", negate = TRUE)])()
 
 file_types <- file_names |>
   stringr::str_split(pattern = "\\.", simplify = TRUE) |>
@@ -51,6 +51,7 @@ file_description[file_names == "south_wollo_coverage.csv"] <- "A dataset from a 
 file_description[file_names == "sssw.dat"] <- "This dataset contains data on the marital status, home circumstances, and ethnic group of 152 persons recruited into a study into the levels of stress experienced by student social workers in the United Kingdom."
 file_description[file_names == "tsstamp.dat"] <- "This data is from a matched case-control study investigating the association between the use of different brands of tampon and toxic shock syndrome undertaken during an outbreak. Only a subset of the original dataset is used here."
 file_description[file_names == "waste.dat"] <- "The dataset contains the location of twenty-three recent cases of childhood cancer in 5 by 5 km square surrounding an industrial waste disposal site."
+file_description[file_names == "koko_plus_coverage.csv"] <- "Dataset from a coverage survey of Koko+ in Eastern Ghana"
 
 file_use <- vector(mode = "character", length = length(file_names))
 
@@ -73,9 +74,7 @@ file_use[file_names == "south_wollo_coverage.csv"] <- "Useful for learning how t
 file_use[file_names == "sssw.dat"] <- "Useful for learning how to analyse survey data and using various plots for exploratory data analysis"
 file_use[file_names == "tsstamp.dat"] <- "Useful for learning and practicing how to perform logistic regression and stratified analysis"
 file_use[file_names == "waste.dat"] <- "Useful for learning and practicing computer simulation to test spatial clustering"
-
-
-
+file_use[file_names == "koko_plus_coverage.csv"] <- "Useful for learning how to analyse survey data, perform basic spatial analysis, and perform comparative analysis for evaluating programme performance"
 
 data.frame(file_names, file_types, file_description, file_use) |>
   knitr::kable(row.names = FALSE, col.names = c("File Name", "File Type", "File Description", "Epidemiology/Statistics Usage"))
